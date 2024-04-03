@@ -15,7 +15,7 @@ var config_data = `
     { "name": "Event",
       "code": "e",
       "type": "event",
-      "defaultValue": "2023tnkn",
+      "defaultValue": "2024CHCMP",
       "required": "true"
     },
     { "name": "Match Level",
@@ -120,7 +120,7 @@ var config_data = `
     },
     { "name": "Speed Rating",
       "code": "sr",
-      "type": "counter",
+      "type": "counter"
     },
     { "name": "Fouls",
       "code": "fls",
