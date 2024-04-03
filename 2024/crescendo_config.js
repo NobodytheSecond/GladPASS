@@ -59,18 +59,16 @@ var config_data = `
       "code": "as",
       "type": "radio",
       "choices": {
-        "s": "Source<br>",
-        "f": "Floor<br>",
-        "b": "Both<br>",
-        "x": "Not Attempted"
+        "a": "Closest to Amp<br>",
+        "b": "On the Amp side of the Speaker",
+        "c": "Middle of the Speaker<br>",
+        "d": "On the Source side of the Speaker",
+        "e": "Closest to Source<br>"
       }
     }
   ],
   "auton": [
-    { "name": "Leave Starting Zone",
-      "code": "al",
-      "type": "bool"
-    },
+
     { "name": "Amp Scores",
       "code": "aas",
       "type": "counter"
@@ -79,67 +77,43 @@ var config_data = `
       "code": "ass",
       "type": "counter"
     }
+    { "name": "Leave Starting Zone/Mobility",
+      "code": "al",
+      "type": "bool"
+    },
   ],
   "teleop": [
     { "name": "Amp Scores",
       "code": "tas",
       "type": "counter"
     },
+    { "name": "Amp Missed",
+      "code": "tam",
+      "type": "counter"
+    },
     { "name": "Speaker Scores",
       "code": "tss",
       "type": "counter"
     },
-    { "name": "Times Amplified",
-      "code": "tta",
+    { "name": "Speaker Missed",
+      "code": "tsm",
       "type": "counter"
-    },
-    { "name": "Pickup From",
-      "code": "tpu",
-      "type": "radio",
-      "choices": {
-        "s": "Source<br>",
-        "f": "Floor<br>",
-        "b": "Both<br>",
-        "x": "Not Attempted"
-      },
-      "defaultValue": "x"
     }
   ],
   "endgame": [
-    { "name": "Stage Timer",
-      "code": "dt",
-      "type": "timer"
-    },
     { "name": "Final Status",
       "code": "fs",
       "type":"radio",
       "choices": {
-        "p": "Parked<br>",
-        "o": "Onstage<br>",
-        "s": "Onstage (Spotlit)<br>",
-        "h": "Harmony<br>",
-        "a": "Attempted but failed<br>",
-        "x": "Not attempted"
+        "n": "Nothing<br>",
+        "p": "Park<br>",
+        "c": "Climb<br>",
+        "t": "Trap<br>",
       },
-      "defaultValue": "x"
-    },
-    { "name": "Note in Trap",
-      "code": "nit",
-      "type": "bool"
+      "defaultValue": "n"
     }
   ],
   "postmatch": [
-    { "name": "Driver Skill",
-      "code": "ds",
-      "type": "radio",
-      "choices": {
-        "n": "Not Effective<br>",
-        "a": "Average<br>",
-        "v": "Very Effective<br>",
-        "x": "Not Observed"
-      },
-      "defaultValue": "x"
-    },
     { "name": "Defense Rating",
       "code": "dr",
       "type": "radio",
@@ -164,22 +138,9 @@ var config_data = `
       },
       "defaultValue":"3"
     },
-    { "name": "Died/Immobilized",
-      "code": "die",
-      "type": "bool"
-    },
-    { "name": "Tippy<br>(almost tipped over)",
-      "code": "tip",
-      "type": "bool"
-    },
-    { "name": "Dropped Notes (>2)",
-      "code": "dn",
-      "type": "bool"
-    },
-    { "name": "Make good<br>alliance partner?",
-      "tooltip": "Would you want this robot on your alliance in eliminations?",
-      "code": "all",
-      "type": "bool"
+    { "name": "Fouls",
+      "code": "fls",
+      "type": "counter"
     },
     { "name": "Comments",
       "code": "co",
