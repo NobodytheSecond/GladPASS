@@ -59,11 +59,11 @@ var config_data = `
       "code": "as",
       "type": "radio",
       "choices": {
-        "a": "Closest to Amp<br>",
-        "b": "On the Amp side of the Speaker",
-        "c": "Middle of the Speaker<br>",
-        "d": "On the Source side of the Speaker",
-        "e": "Closest to Source<br>"
+        "1": "Closest to Amp<br>",
+        "2": "On the Amp side of the Speaker",
+        "3": "Middle of the Speaker<br>",
+        "4": "On the Source side of the Speaker",
+        "5": "Closest to Source<br>"
       }
     }
   ],
@@ -105,38 +105,22 @@ var config_data = `
       "code": "fs",
       "type":"radio",
       "choices": {
-        "n": "Nothing<br>",
-        "p": "Park<br>",
-        "c": "Climb<br>",
-        "t": "Trap<br>"
+        "0": "Nothing<br>",
+        "1": "Park<br>",
+        "3": "Climb<br>",
+        "8": "Trap<br>"
       },
-      "defaultValue": "n"
+      "defaultValue": "0"
     }
   ],
   "postmatch": [
     { "name": "Defense Rating",
       "code": "dr",
-      "type": "radio",
-      "choices": {
-        "b": "Below Average<br>",
-        "a": "Average<br>",
-        "g": "Good<br>",
-        "e": "Excellent<br>",
-        "x": "Did not play defense"
-      },
-      "defaultValue": "x"
+      "type": "counter"
     },
     { "name": "Speed Rating",
       "code": "sr",
-      "type": "radio",
-      "choices": {
-        "1": "1 (slow)<br>",
-        "2": "2<br>",
-        "3": "3<br>",
-        "4": "4<br>",
-        "5": "5 (fast)"
-      },
-      "defaultValue":"3"
+      "type": "counter",
     },
     { "name": "Fouls",
       "code": "fls",
