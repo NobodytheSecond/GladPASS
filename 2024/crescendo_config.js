@@ -60,7 +60,7 @@ var config_data = `
       "type": "radio",
       "choices": {
         "1": "Closest to Amp<br>",
-        "2": "On the Amp side of the Speaker<br?>",
+        "2": "On the Amp side of the Speaker<br>",
         "3": "Middle of the Speaker<br>",
         "4": "On the Source side of the Speaker<br>",
         "5": "Closest to Source<br>"
