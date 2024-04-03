@@ -64,6 +64,7 @@ var config_data = `
         "b": "Both<br>",
         "x": "Not Attempted"
       }
+    }
   ],
   "auton": [
     { "name": "Leave Starting Zone",
