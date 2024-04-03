@@ -5,10 +5,28 @@ var config_data = `
   "page_title": "Crescendo",
   "checkboxAs": "10",
   "prematch": [
+    { "name": "Scouter Initials",
+      "code": "s",
+      "type": "scouter",
+      "size": 5,
+      "maxSize": 5,
+      "required": "true"
+    },
     { "name": "Event",
       "code": "e",
       "type": "event",
       "defaultValue": "2023tnkn",
+      "required": "true"
+    },
+    { "name": "Match Level",
+      "code": "l",
+      "type": "level",
+      "choices": {
+        "qm": "Quals<br>",
+        "sf": "Semifinals<br>",
+        "f": "Finals"
+      },
+      "defaultValue": "qm",
       "required": "true"
     },
     { "name": "Match #",
