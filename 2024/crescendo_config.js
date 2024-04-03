@@ -76,11 +76,11 @@ var config_data = `
     { "name": "Speaker Scores",
       "code": "ass",
       "type": "counter"
-    }
+    },
     { "name": "Leave Starting Zone/Mobility",
       "code": "al",
       "type": "bool"
-    },
+    }
   ],
   "teleop": [
     { "name": "Amp Scores",
