@@ -108,7 +108,7 @@ var config_data = `
         "n": "Nothing<br>",
         "p": "Park<br>",
         "c": "Climb<br>",
-        "t": "Trap<br>",
+        "t": "Trap<br>"
       },
       "defaultValue": "n"
     }
