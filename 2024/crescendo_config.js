@@ -114,11 +114,11 @@ var config_data = `
     }
   ],
   "postmatch": [
-    { "name": "Defense Rating",
+    { "name": "Defense Rating: 1-10",
       "code": "dr",
       "type": "counter"
     },
-    { "name": "Speed Rating",
+    { "name": "Speed Rating: 1-10",
       "code": "sr",
       "type": "counter"
     },
