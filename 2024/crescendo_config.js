@@ -62,7 +62,7 @@ var config_data = `
         "5": "Closest to Source<br>",
         "4": "On the Source side of the Speaker<br>",
         "3": "Middle of the Speaker<br>",
-        "2": "On the Amp side of the Speaker<br>"
+        "2": "On the Amp side of the Speaker<br>",
         "1": "Closest to Amp<br>"
       }
     }
