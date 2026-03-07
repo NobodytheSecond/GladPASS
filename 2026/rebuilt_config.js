@@ -122,25 +122,19 @@ var config_data = `
       "expectedMax": 25,
       "shape": "circle 5 black red true"
     },
-    { "name": "Fuel Scored",
+    { "name": "Cycles Scored",
       "code": "tfs",
       "expectedMax": 150,
-      "altInc1": 10,
-      "altInc2": 5,
       "type": "counter"
     },
-    { "name": "Pass from Neutral Zone",
+    { "name": "Cycles Passed from Neutral Zone",
       "code": "pnz",
       "expectedMax": 250,
-      "altInc1": 10,
-      "altInc2": 5,
       "type": "counter"
     },
-    { "name": "Pass from Opp Alliance Zone",
+    { "name": "Cycles Passed from Opp Alliance Zone",
       "code": "poa",
       "expectedMax": 250,
-      "altInc1": 10,
-      "altInc2": 5,
       "type": "counter"
     },
     { "name": "Pickup from Depot",
@@ -154,7 +148,21 @@ var config_data = `
     { "name": "Pickup from Floor",
       "code": "tff",
       "type": "bool"
-    }
+    },
+    { "name": "Fuel Percentage",
+      "tooltip": "What percentage of the total fuel for this alliance did this robot score?",
+      "code": "pct",
+      "type": "radio",
+      "choices": {
+        "10": "10<br>",
+        "30": "20<br>",
+        "50": "50<br>",
+        "70": "70<br>",
+        "90": "90"
+      },
+      "required" : "true",
+      
+    },
   ],
   "endgame": [
     { "name": "Climb",
@@ -186,10 +194,10 @@ var config_data = `
       "code": "dr",
       "type": "radio",
       "choices": {
-        "b": "Below Average<br>",
-        "a": "Average<br>",
-        "g": "Good<br>",
-        "e": "Excellent<br>",
+        "1": "Below Average<br>",
+        "2": "Average<br>",
+        "3": "Good<br>",
+        "4": "Excellent<br>",
         "x": "Did not play defense"
       },
       "defaultValue": "x"
@@ -218,10 +226,6 @@ var config_data = `
       "code": "die",
       "type": "bool"
     },
-    { "name": "Tippy<br>(almost tipped over)",
-      "code": "tip",
-      "type": "bool"
-    },
     { "name": "Make good<br>alliance partner?",
       "tooltip": "Would you want this robot on your alliance in eliminations?",
       "code": "all",
@@ -234,13 +238,6 @@ var config_data = `
     { "name": "Excessive Penalties",
       "code": "pen",
       "type": "bool"
-    },
-    { "name": "Fuel Percentage",
-      "tooltip": "What percentage of the total fuel for this alliance did this robot score?",
-      "code": "pct",
-      "type": "number",
-      "min": 0,
-      "max": 100
     },
     { "name": "Comments",
       "code": "co",
