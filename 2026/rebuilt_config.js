@@ -162,7 +162,7 @@ var config_data = `
       },
       "required" : "true",
       
-    },
+    }
   ],
   "endgame": [
     { "name": "Climb",
