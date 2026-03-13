@@ -161,7 +161,7 @@ var config_data = `
         "90": "90"
       },
       "required" : "true",
-      
+      "defaultValue": "50"
     }
   ],
   "endgame": [
