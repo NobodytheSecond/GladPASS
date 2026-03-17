@@ -128,7 +128,7 @@ var config_data = `
       "choices" : {
       "1" : "Yes"
       },
-      defaultvalue : "1"
+      defaultvalue : "Yes"
     },
     { "name": "Cycles Passed",
       "code": "pnz",
