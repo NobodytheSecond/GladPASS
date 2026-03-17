@@ -122,18 +122,16 @@ var config_data = `
       "expectedMax": 25,
       "shape": "circle 5 black red true"
     },
-    { "name": "Cycles Scored",
+    { "name": "CLICK ON PICTURE TO COUNT CYCLES",
       "code": "tfs",
-      "expectedMax": 150,
-      "type": "counter"
+      "type": "radio"
+      "choices" : {
+      "1" : "Yes"
+      },
+      defaultvalue : "1"
     },
-    { "name": "Cycles Passed from Neutral Zone",
+    { "name": "Cycles Passed",
       "code": "pnz",
-      "expectedMax": 250,
-      "type": "counter"
-    },
-    { "name": "Cycles Passed from Opp Alliance Zone",
-      "code": "poa",
       "expectedMax": 250,
       "type": "counter"
     },
@@ -149,19 +147,19 @@ var config_data = `
       "code": "tff",
       "type": "bool"
     },
-    { "name": "Fuel Percentage",
+    { "name": "Fuel Accuracy Percentage",
       "tooltip": "What percentage of the total fuel for this alliance did this robot score?",
       "code": "pct",
       "type": "radio",
       "choices": {
+        "0": "0<br>",
         "10": "10<br>",
         "30": "20<br>",
         "50": "50<br>",
         "70": "70<br>",
         "90": "90"
       },
-      "required" : "true",
-      "defaultValue": "50"
+      "defaultValue": "0"
     }
   ],
   "endgame": [
