@@ -126,9 +126,9 @@ var config_data = `
       "code": "tfs",
       "type": "radio",
       "choices" : {
-      "1" : "Yes"
+      "1" : "1"
       },
-      defaultvalue : "Yes"
+      "defaultvalue" : "1"
     },
     { "name": "Cycles Passed",
       "code": "pnz",
