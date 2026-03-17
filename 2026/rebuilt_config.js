@@ -124,7 +124,7 @@ var config_data = `
     },
     { "name": "CLICK ON PICTURE TO COUNT CYCLES",
       "code": "tfs",
-      "type": "radio"
+      "type": "radio",
       "choices" : {
       "1" : "Yes"
       },
