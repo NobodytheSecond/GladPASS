@@ -147,6 +147,14 @@ var config_data = `
       "code": "tff",
       "type": "bool"
     },
+    { "name": "Crossed Bump",
+      "code": "bmp",
+      "type": "bool"
+    },
+    { "name": "Crossed Trench",
+      "code": "tre",
+      "type": "bool"
+    },
     { "name": "Fuel Accuracy Percentage",
       "tooltip": "What percentage of the total fuel for this alliance did this robot score?",
       "code": "pct",
@@ -170,10 +178,10 @@ var config_data = `
         "1": "Level 1<br>",
         "2": "Level 2<br>",
         "3": "Level 3<br>",
-        "a": "Attempted<br>",
-        "x": "Not Attempted"
+        ".5": "Attempted<br>",
+        "0": "Not Attempted"
       },
-      "defaultValue": "x"
+      "defaultValue": "0"
     }
   ],
   "postmatch": [
@@ -211,14 +219,6 @@ var config_data = `
         "5": "5 (fast)"
       },
       "defaultValue":"3"
-    },
-    { "name": "Crossed Bump",
-      "code": "bmp",
-      "type": "bool"
-    },
-    { "name": "Crossed Trench",
-      "code": "tre",
-      "type": "bool"
     },
     { "name": "Died/Immobilized",
       "code": "die",
