@@ -22,12 +22,9 @@ var config_data = `
       "code": "l",
       "type": "level",
       "choices": {
-        "qm": "Quals<br>",
-        "sf": "Semifinals<br>",
-        "f": "Finals"
+        "qm": "Quals",
       },
       "defaultValue": "qm",
-      "required": "true"
     },
     { "name": "Match #",
       "code": "m",
@@ -122,7 +119,7 @@ var config_data = `
       "expectedMax": 25,
       "shape": "circle 5 black red true"
     },
-    { "name": "CLICK ON PICTURE TO COUNT CYCLES",
+    { "name": "CLICK ON PICTURE TO COUNT TIMES SHOT",
       "code": "tfs",
       "type": "radio",
       "choices" : {
