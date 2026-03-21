@@ -15,7 +15,7 @@ var config_data = `
     { "name": "Event",
       "code": "e",
       "type": "event",
-      "defaultValue": "2026MDPAS",
+      "defaultValue": "2026MDBET",
       "required": "true"
     },
     { "name": "Match Level",
