@@ -24,7 +24,7 @@ var config_data = `
       "choices": {
         "qm": "Quals"
       },
-      "defaultValue": "qm",
+      "defaultValue": "qm"
     },
     { "name": "Match #",
       "code": "m",
