@@ -22,7 +22,7 @@ var config_data = `
       "code": "l",
       "type": "level",
       "choices": {
-        "qm": "Quals",
+        "qm": "Quals"
       },
       "defaultValue": "qm",
     },
