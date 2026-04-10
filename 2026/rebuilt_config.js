@@ -119,7 +119,7 @@ var config_data = `
       "expectedMax": 25,
       "shape": "circle 5 black red true"
     },
-    { "name": "CLICK ON PICTURE TO COUNT TIMES SHOT",
+    { "name": "CLICK ON PICTURE TO COUNT NUMBER OF CYCLES",
       "code": "tfs",
       "type": "radio",
       "choices" : {
